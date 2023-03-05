@@ -1,4 +1,4 @@
-### :warning: Disclaimer: 
+## :warning: Disclaimer: 
 ###   This is for educational and entertainment purposes only! Do not use this to cheat on offical servers. You will get banned.
 ------------------
 # csgoCheat
