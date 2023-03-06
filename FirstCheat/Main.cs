@@ -3,8 +3,9 @@ using System.Threading;
 
 namespace FirstCheat
 {
-	internal class Program
+    internal class Program
 	{
+		public VAMemory vaMemory = new VAMemory("csgo");
 		static void Main(string[] args)
 		{
 
@@ -13,7 +14,9 @@ namespace FirstCheat
 
 		}
 
-		public static nint StartInjection()
+
+
+        public static nint StartInjection()
 		{
 			VAMemory vaMemory = new VAMemory("csgo");
 
@@ -38,6 +41,9 @@ namespace FirstCheat
 
 		public static void CheatLoop()
 		{
+
+		
+
 			int i = 0;
 			while (true)
 			{
