@@ -1,4 +1,5 @@
 ﻿using System;
+
 namespace FirstCheat
 {
 	public class ESPGlow
@@ -6,6 +7,11 @@ namespace FirstCheat
 		public ESPGlow()
 		{
 		}
+
+        VAMemory vam = new VAMemory("csgo");
+
+        UIntPtr moduleBase;
+        
 
         struct GlowStructEnemy
         {
@@ -45,9 +51,9 @@ namespace FirstCheat
         GlowStructLocal glowLocal;
 
 
-        UIntPtr getLocalPlayer()
+        IntPtr getLocalPlayer()
         {
-            return 
+            return vam.ReadIntPtr((nint)(moduleBase + OFFSETS.dwLocalPlayer));
         }
     }
 }
